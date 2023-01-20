@@ -1,183 +1,362 @@
 @import "./abstracts/variables";
 @import "~bootstrap/scss/bootstrap";
-@font-face {font-family:"Mont ExtraLight DEMO";src:url("../fonts/Mont-ExtraLightDEMO.eot?") format("eot"),url("../fonts/Mont-ExtraLightDEMO.woff") format("woff"),url("../fonts/Mont-ExtraLightDEMO.ttf") format("truetype"),url("../fonts/Mont-ExtraLightDEMO.svg#Mont-ExtraLightDEMO") format("svg");font-weight:normal;font-style:normal;}
-@font-face {font-family:"Mont Heavy DEMO";src:url("../fonts/Mont-HeavyDEMO.eot?") format("eot"),url("../fonts/Mont-HeavyDEMO.woff") format("woff"),url("../fonts/Mont-HeavyDEMO.ttf") format("truetype"),url("../fonts/Mont-HeavyDEMO.svg#Mont-HeavyDEMO") format("svg");font-weight:normal;font-style:normal;}
+@font-face {
+  font-family: "Mont ExtraLight DEMO";
+  src: url("../fonts/Mont-ExtraLightDEMO.eot?") format("eot"),
+    url("../fonts/Mont-ExtraLightDEMO.woff") format("woff"),
+    url("../fonts/Mont-ExtraLightDEMO.ttf") format("truetype"),
+    url("../fonts/Mont-ExtraLightDEMO.svg#Mont-ExtraLightDEMO") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mont Heavy DEMO";
+  src: url("../fonts/Mont-HeavyDEMO.eot?") format("eot"),
+    url("../fonts/Mont-HeavyDEMO.woff") format("woff"),
+    url("../fonts/Mont-HeavyDEMO.ttf") format("truetype"),
+    url("../fonts/Mont-HeavyDEMO.svg#Mont-HeavyDEMO") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 .nav-main {
-    background : $white;
-    --bs-navbar-brand-padding-y: 3px;
-    --bs-navbar-padding-y: 0px;
+  background: $white;
+  --bs-navbar-brand-padding-y: 3px;
+  // --bs-navbar-padding-y: 0px;
 }
 
 body {
-    background : $navy-blue;
-    // height: 2000px;
+  background: $navy-blue;
+  // height: 2000px;
 }
 
-
-
 .navbar-item {
-    font-family : Mont ExtraLight DEMO;
-    font-size : 30px;
-    line-height : 47px;
-    --bs-nav-link-color: $navy-blue;
-    --bs-nav-link-font-size: 20px;
-    color : $navy-blue;
+  font-family: Mont ExtraLight DEMO;
+  font-size: 30px;
+  line-height: 47px;
+  --bs-nav-link-color: $navy-blue;
+  --bs-nav-link-font-size: 20px;
+  color: $navy-blue;
 }
 
 .white-btn {
-    --bs-nav-link-color: $white;
-    color : $white;
+  --bs-nav-link-color: $white;
+  color: $white;
 }
 
 .donate-btn {
-    background : #1B1464;
-    background : rgba(27, 20, 100, 1);
-    border-radius : 20px;
-    -moz-border-radius : 20px;
-    -webkit-border-radius : 20px;
-    --bs-nav-link-padding-x : 50px;
+  background: #1b1464;
+  background: rgba(27, 20, 100, 1);
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  --bs-nav-link-padding-x: 50px;
 }
 
 .dynamic-img {
-    max-width: 75%;
-    max-height: 698px;
-    height: auto;
-    // flex: 500px;
+  max-width: 75%;
+  max-height: 698px;
+  height: auto;
+  // flex: 500px;
 }
 
 .mid-section {
-    background : -moz-linear-gradient(0% 50% 0deg,rgba(84, 176, 232, 1) 47.49%,rgba(0, 255, 255, 1) 90.9%);
-    background : -webkit-linear-gradient(0deg, rgba(84, 176, 232, 1) 47.49%, rgba(0, 255, 255, 1) 90.9%);
-    background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0.4749,rgba(84, 176, 232, 1) ),color-stop(0.909,rgba(0, 255, 255, 1) ));
-    background : -o-linear-gradient(0deg, rgba(84, 176, 232, 1) 47.49%, rgba(0, 255, 255, 1) 90.9%);
-    background : -ms-linear-gradient(0deg, rgba(84, 176, 232, 1) 47.49%, rgba(0, 255, 255, 1) 90.9%);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#54B0E8', endColorstr='#00FFFF' ,GradientType=0)";
-    background : linear-gradient(90deg, rgba(84, 176, 232, 1) 47.49%, rgba(0, 255, 255, 1) 90.9%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54B0E8',endColorstr='#00FFFF' , GradientType=1);
-    display: flex;
-    flex-wrap: wrap;
+  background: -moz-linear-gradient(
+    0% 50% 0deg,
+    rgba(84, 176, 232, 1) 47.49%,
+    rgba(0, 255, 255, 1) 90.9%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(84, 176, 232, 1) 47.49%,
+    rgba(0, 255, 255, 1) 90.9%
+  );
+  background: -webkit-gradient(
+    linear,
+    0% 50%,
+    100% 50%,
+    color-stop(0.4749, rgba(84, 176, 232, 1)),
+    color-stop(0.909, rgba(0, 255, 255, 1))
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(84, 176, 232, 1) 47.49%,
+    rgba(0, 255, 255, 1) 90.9%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(84, 176, 232, 1) 47.49%,
+    rgba(0, 255, 255, 1) 90.9%
+  );
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#54B0E8', endColorstr='#00FFFF' ,GradientType=0)";
+  background: linear-gradient(
+    90deg,
+    rgba(84, 176, 232, 1) 47.49%,
+    rgba(0, 255, 255, 1) 90.9%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54B0E8',endColorstr='#00FFFF' , GradientType=1);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .mid-section-txt {
-    font-family : Mont Heavy DEMO;
-    font-size : 5vw;
-    letter-spacing : -0.41px;
-    color : #FFFFFF;
-    color : rgb(255, 255, 255);
-    text-shadow: 0.6vw 0.6vw 0px #1B1464;
-    padding-left: 0.6vw;
-    padding-bottom: 1vw;
-    flex: 500px;
-    text-align: center;
+  font-family: Mont Heavy DEMO;
+  font-size: 5vw;
+  letter-spacing: -0.41px;
+  color: #ffffff;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.6vw 0.6vw 0px #1b1464;
+  padding-left: 0.6vw;
+  padding-bottom: 1vw;
+  flex: 500px;
+  text-align: center;
 }
 
-
 .donate-btn-white {
-    background : #FFFFFF;
-    background : rgba(255, 255, 255, 1);
-    border-radius : 20px;
-    -moz-border-radius : 20px;
-    -webkit-border-radius : 20px;
-    width: $donate-btn-width;
-    height: auto;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  width: $donate-btn-width;
+  height: auto;
 }
 
 .donate-txt-white {
-    font-family : Mont ExtraLight DEMO;
-    font-size : 3.5vw;
-    color : #1B1464;
-    color : rgb(27, 20, 100);
+  font-family: Mont ExtraLight DEMO;
+  font-size: 3.5vw;
+  color: #1b1464;
+  color: rgb(27, 20, 100);
 }
 
 .flex-div {
-    display: flex;
+  display: flex;
 }
 
 .flex-col {
-    flex-direction: column;
+  flex-direction: column;
 }
 .rel-pos {
-    position: relative;
+  position: relative;
 }
 
 .youtube-iframe {
-    width: 80vw;
-    height: calc(80vw * 9 / 16)
+  width: 80vw;
+  height: calc(80vw * 9 / 16);
 }
 
 .auto-resizable-iframe {
-    max-width: 420px;
-    margin: 0px auto;
-  }
-  
-  .auto-resizable-iframe > div {
-    position: relative;
-    padding-bottom: 75%;
-    height: 0px;
-  }
-  
-  .auto-resizable-iframe iframe {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-  }
+  max-width: 420px;
+  margin: 0px auto;
+}
 
-  .donate-btn-section {
-    margin-top: -3vw;
-  }
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0px;
+}
 
-  .voting-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-    border-style : Solid;
-    border-color : #00FFFF;
-    border-color : rgba(0, 255, 255, 1);
-    border-width : 0.5vw;
-    font-family : Mont Heavy DEMO;
-    font-size : 2.5vw;
-    color : #FFFFFF;
-    color : rgb(255, 255, 255);
-    text-align: center;
-  }
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
 
-  .quote-section {
-    background : #FFFFFF;
-    background : rgba(255, 255, 255, 1);
-  }
-  .quote {
-    font-family: minion-pro, serif;
-    font-style: italic;
-    letter-spacing : -0.24px;
-    font-size: 3vw;
-    color : #1B1464;
-    color : rgb(27, 20, 100);
-    width: 40vw;
-    text-align: center;
-  }
+.donate-btn-section {
+  margin-top: -3vw;
+}
 
-  .minion-normal {
-    font-family: minion-pro-display, serif;
-    font-style: normal;
-  }
+.voting-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  border-style: Solid;
+  border-color: #00ffff;
+  border-color: rgba(0, 255, 255, 1);
+  border-width: 0.5vw;
+  font-family: Mont Heavy DEMO;
+  font-size: 2.5vw;
+  color: #ffffff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
 
-  .underline {
-    border-bottom: 0.5vw solid #00FFFF;
-  }
+.quote-section {
+  background: #ffffff;
+  background: rgba(255, 255, 255, 1);
+}
+.quote {
+  font-family: minion-pro, serif;
+  font-style: italic;
+  letter-spacing: -0.24px;
+  font-size: 3vw;
+  color: #1b1464;
+  color: rgb(27, 20, 100);
+  width: 40vw;
+  text-align: center;
+}
 
-  .learn-more-box {
-    width: 40vw;
-  }
+.minion-normal {
+  font-family: minion-pro-display, serif;
+  font-style: normal;
+}
 
-  .learn-more-box-group {
-    width: 100%;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    justify-content: space-between;
-  }
+.underline {
+  border-bottom: 0.5vw solid #00ffff;
+}
 
-  
-  
+.learn-more-box {
+  width: 40vw;
+}
+
+.learn-more-box-group {
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  justify-content: space-between;
+}
+
+.hidden-elem {
+  display: none;
+}
+
+.mb-vw-1 {
+  margin-bottom: 1vw;
+}
+
+.mb-vw-2 {
+  margin-bottom: 2vw;
+}
+
+.mb-vw-3 {
+  margin-bottom: 3vw;
+}
+
+.mb-vw-4 {
+  margin-bottom: 4vw;
+}
+
+.mb-vw-5 {
+  margin-bottom: 5vw;
+}
+
+.mt-vw-1 {
+  margin-top: 1vw;
+}
+
+.mt-vw-2 {
+  margin-top: 2vw;
+}
+
+.mt-vw-3 {
+  margin-top: 3vw;
+}
+
+.mt-vw-4 {
+  margin-top: 4vw;
+}
+
+.mt-vw-5 {
+  margin-top: 5vw;
+}
+
+.p-vw-1 {
+  padding: 1vw;
+}
+
+.p-vw-2 {
+  padding: 2vw;
+}
+
+.p-vw-3 {
+  padding: 3vw;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.justify-content-right {
+  justify-content: flex-end;
+}
+
+.navbar > .container-fluid {
+  justify-content: flex-end;
+}
+
+.blue-gradient {
+  background: -moz-linear-gradient(
+    -0.13% 50% 180deg,
+    rgba(84, 176, 232, 1) 47.49%,
+    rgba(0, 255, 255, 1) 90.9%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(84, 176, 232, 1) 47.49%,
+    rgba(0, 255, 255, 1) 90.9%
+  );
+  background: -webkit-gradient(
+    linear,
+    -0.13% 50%,
+    99.87% 50%,
+    color-stop(0.4749, rgba(84, 176, 232, 1)),
+    color-stop(0.909, rgba(0, 255, 255, 1))
+  );
+  background: -o-linear-gradient(
+    180deg,
+    rgba(84, 176, 232, 1) 47.49%,
+    rgba(0, 255, 255, 1) 90.9%
+  );
+  background: -ms-linear-gradient(
+    180deg,
+    rgba(84, 176, 232, 1) 47.49%,
+    rgba(0, 255, 255, 1) 90.9%
+  );
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#54B0E8', endColorstr='#00FFFF' ,GradientType=0)";
+  background: linear-gradient(
+    270deg,
+    rgba(84, 176, 232, 1) 47.49%,
+    rgba(0, 255, 255, 1) 90.9%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54B0E8',endColorstr='#00FFFF' , GradientType=1);
+}
+
+.mont-heavy {
+  font-family: Mont Heavy DEMO;
+}
+
+.mont-extra-light {
+  font-family: Mont ExtraLight DEMO;
+}
+
+.title {
+  @extend.blue-gradient;
+  @extend.mont-heavy;
+  font-family: Mont Heavy DEMO;
+  font-size: 3vw;
+  color: #ffffff;
+  color: rgb(255, 255, 255);
+}
+
+.secondary-body {
+  @extend.mont-extra-light;
+  padding: 1vw;
+  padding-top: 0.75vw;
+  font-size: 1vw;
+  background-color: $white;
+  display: flex;
+  // justify-content: center;
+}
+
+.meet-johnny-paragraph {
+  // max-width: 1000px;
+  // text-align: center;
+}
+
+.meet-johnny-img {
+  width: 25vw;
+  max-width: 400px;
+  float: right;
+}

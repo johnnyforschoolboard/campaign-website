@@ -15,47 +15,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/izr4crj.css">
   </head>
   <body>
-
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-main sticky-top mb-3">
-      <div class="container-fluid justify-content-center">
-        <!-- TODO: left-align navbar brand, but stays out of hamburger menu, or align with other items but stays inside hamburger menu -->
-        <!-- <a class="navbar-brand" href="#">
-          <img src="./assets/img/logo.png" alt="Johnny Flores Logo" width="105" height="80">
-        </a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 navbar-main-links align-items-center">
-            <li class="nav-item navbar-item">
-              <a class="navbar-brand" href="#">
-                <img src="./assets/img/logo.png" alt="Johnny Flores Logo" width="105" height="80">
-              </a>
-            </li>
-            <li class="nav-item navbar-item">
-              <a class="nav-link" aria-current="page" href="#">MEET JOHNNY</a>
-            </li>
-            <li class="nav-item navbar-item">
-              <a class="nav-link" href="#">ISSUES</a>
-            </li>
-            <li class="nav-item navbar-item">
-              <a class="nav-link" href="#">DISTRICT 2</a>
-            </li>
-            <li class="nav-item navbar-item">
-              <a class="nav-link" href="#">VOTING</a>
-            </li>
-            <li class="nav-item navbar-item">
-              <a class="nav-link" href="#">VOLUNTEER</a>
-            </li>
-            <li class="nav-item navbar-item white-btn">
-              <a class="nav-link donate-btn" href="https://donorbox.org/johnny-for-school-board" target="_blank">DONATE</a>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
-    </nav>
+    <!-- ROUTES -->
+    <a href="nav.html" class="hidden-elem"></a>
+    <a href="icons.html" class="hidden-elem"></a>
+    <script id="replace_with_navbar" src="./assets/js/nav.js"></script>
 
     <div class="flex-div mid-section justify-content-center">
       <img class ="dynamic-img" src="./assets/img/johnny.png" alt="Johnny Flores">
@@ -79,7 +42,7 @@
 
     <div class="flex-div flex-col align-items-center justify-content-center quote-section mb-5">
       <div>
-        <p class="quote mt-5 mb-5">“I am running for school board in 
+        <p class="quote mt-5 mb-vw-2">“I am running for school board in 
           District 2 because now, more than 
           ever, our children need someone to fight 
           for them, so that they have all the tools
@@ -88,7 +51,7 @@
           <span class="minion-normal">- <span class="underline">Johnny Flores</span></span>
         </p>
       </div>
-      <div class="mb-3 mt-5 flex-div learn-more-box-group">
+      <div class="mb-3 mt-vw-2 flex-div learn-more-box-group">
         <svg class="learn-more-box" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 777.4 453" style="enable-background:new 0 0 777.4 453;" xml:space="preserve">
   <style type="text/css">
@@ -411,28 +374,8 @@
       </div>
     </div>
 
-    <div class="icons flex-div justify-content-center">
-      <ul class="wrapper icons">
-        <li class="icon facebook icons">
-          <span class="tooltip icons">Facebook</span>
-          <span class=" icons"><i class="fab fa-facebook-f icons"></i></span>
-        </li>
-        <li class="icon twitter icons">
-          <span class="tooltip icons">Twitter</span>
-          <span class="icons"><i class="fab fa-twitter icons"></i></span>
-        </li>
-        <li class="icon instagram icons">
-          <span class="tooltip icons">Instagram</span>
-          <span class="icons"><i class="fab fa-instagram"></i></span>
-        </li>
-        
-        <li class="icon youtube icons">
-          <span class="tooltip icons">Youtube</span>
-          <span class="icons"><i class="fab fa-youtube icons"></i></span>
-        </li>
-      </ul>
-      </div>
-
+    
+      <script id="replace_with_icons" src="./assets/js/icons.js"></script>
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
