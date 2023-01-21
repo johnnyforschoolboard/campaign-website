@@ -50,6 +50,8 @@ body {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   --bs-nav-link-padding-x: 50px;
+  --bs-navbar-hover-color: #54B0E8;
+  --bs-nav-link-hover-color: #54B0E8;
 }
 
 .dynamic-img {
@@ -335,7 +337,9 @@ body {
   @extend.blue-gradient;
   @extend.mont-heavy;
   font-family: Mont Heavy DEMO;
-  font-size: 3vw;
+  padding: 0.5vw;
+  padding-left: 1vw;
+  font-size: calc(12px + 3vw);
   color: #ffffff;
   color: rgb(255, 255, 255);
 }
@@ -344,19 +348,146 @@ body {
   @extend.mont-extra-light;
   padding: 1vw;
   padding-top: 0.75vw;
-  font-size: 1vw;
+  font-size: calc(12px + 1vw);
+  // font-size: 1.5vw;
   background-color: $white;
   display: flex;
+  // width: 100vw;
   // justify-content: center;
 }
 
-.meet-johnny-paragraph {
-  // max-width: 1000px;
-  // text-align: center;
-}
+
 
 .meet-johnny-img {
-  width: 25vw;
-  max-width: 400px;
+  // width: 25vw;
+  // max-width: 400px;
+  width: 32.5vw; 
   float: right;
+}
+
+.issue-paragraph {
+  text-align: center;
+  width: 80vw;
+}
+
+.issues-learn-more-outer {
+  // make it be 60vw width and rounded corners
+  width: 45vw;
+  border-radius: 1vw;
+  background-color: $light-blue;
+}
+
+.issues-learn-more-inner {
+  // padding: 2vw;
+  margin: 2vw;
+  border: solid $white;
+  border-width: 0px $border-size $border-size 0;
+  box-shadow: 
+    -$border-size (-$border-size) 0 $cyan,
+    -$border-size (-$border-size) inset $cyan,
+    $border-size $border-size 0 inset $white;
+}
+
+.issues-learn-more {
+  font-size: calc(12px + 1vw);
+  text-align: center;
+  color: $cyan;
+  padding: 2vw;
+  text-decoration: none;
+  font-family: Mont Heavy DEMO;
+  width: 100%;
+}
+
+.vw-60 {
+  width: 60vw;
+}
+
+.image-caption-box {
+  display: block;
+  font-family: Mont Heavy DEMO;
+  color: black;
+  margin: 1vw;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.school-icons {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.auto-margin {
+  display: block;
+  margin: auto;
+  // width: 10vw;
+}
+
+.bg-light-blue {
+  background-color: $light-blue;
+}
+
+.district-map {
+  width: 80vw;
+}
+
+.vw-40 {
+  width: 40vw;
+}
+
+.vw-30 {
+  width: 30vw;
+}
+
+.when-info-box {
+  border: 0.75vw solid $cyan;
+}
+
+.where-info-box {
+  border: 0.75vw solid $light-blue;
+}
+
+.cy-txt {
+  color: $cyan;
+}
+
+.lb-txt {
+  color: $light-blue;
+}
+
+.box-text {
+  font-family: Mont ExtraLight DEMO;
+  font-size: calc(12px + 1vw);
+  text-align: center;
+  margin: 1vw;
+}
+
+.box-title {
+  font-family: Mont Heavy DEMO;
+  font-size: calc(12px + 1vw);
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+.active {
+  --bs-navbar-active-color: white;
+  background-color: #54B0E8;
+  // add rounded corners
+  border-radius: 1vw;
+
+}
+
+.nav-link {
+  --bs-navbar-hover-color: #54B0E8;
+  --bs-nav-link-hover-color: #54B0E8;
+  --bs-navbar-nav-link-padding-x: 2.8vw;
+}
+
+.nav-item {
+  
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
